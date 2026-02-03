@@ -1,4 +1,4 @@
-package gfg;
+package codeforces;
 
 import java.util.Scanner;
 
