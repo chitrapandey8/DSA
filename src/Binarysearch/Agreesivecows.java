@@ -46,6 +46,7 @@ public class Agreesivecows {
 
 
     static void main() {
+
         int[] arr = {1,2,4,8,9};
         brute(arr,3);
     }
