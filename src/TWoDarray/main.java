@@ -127,16 +127,74 @@ public class main {
 //            }
 //            System.out.println(sum);
 //        }
+
+
+//        int sum = 0;
+//        for(int i = 0; i<mat.length; i++){
+//            sum += mat[i][i];
+//            sum += mat[i][mat.length-i-1];
+//        }
+//        if(mat.length%2 == 1){
+//            sum -= mat[mat.length/2][mat.length/2];
+//        }
+//        System.out.println(sum);
+
         int[][] mat = {{1,2,3},{4,5,6},{7,8,9}};
-        int sum = 0;
-        for(int i = 0; i<mat.length; i++){
-            sum += mat[i][i];
-            sum += mat[i][mat.length-i-1];
-        }
-        if(mat.length%2 == 1){
-            sum -= mat[mat.length/2][mat.length/2];
-        }
-        System.out.println(sum);
+        int target  = 9;
+
+        /// //////////////////////LINEAR SEARCH//////////////////////////////////
+//        for(int i = 0; i<mat.length; i++){
+//            for (int j = 0; j<mat[0].length; j++){
+//                if(mat[i][j] == value){
+//                    System.out.println("true");
+//                }
+//            }
+//        }
+
+         ////////////////////////////BINARY SEARCH/////////////////////////
+       //har roe sorted ho
+
+//        for(int i = 0; i< mat.length; i++){
+//            if(mat[i][0] >= target && target  <= mat[i][cols-1]){
+//                int start = 0;
+//                int end = cols - 1;
+//                while(start<=end){
+//                    int mid  = start + (end-start)/2;
+//                    if(mat[i][mid] == target){
+//                        System.out.println("true");
+//                    }else if(mat[i][mid] > target){
+//                        end = mid -1;
+//
+//                    }else{
+//                        start = mid+1;
+//                    }
+//                }
+//            }
+//
+//
+//        }
+        int roww = mat.length;
+        int colss = mat[0].length;
+        int start = 0;
+         int end = roww*colss-1;
+
+         while(start <= end){
+             int mid = start+(end-start)/2;
+             int cols  = mid/colss;
+             int rows = mid%cols;
+             if(mat[rows][cols] == target){
+                 System.out.println("true");
+             } else if (mat[rows][cols] > target) {
+                 end = mid-1;
+
+             }else{
+                 start = mid+1;
+             }
+
+         }
+
+
+
     }
 }
 
