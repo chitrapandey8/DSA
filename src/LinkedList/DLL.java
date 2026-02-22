@@ -46,6 +46,11 @@ public class DLL {
          tail = newnode6;
 
 
+
+
+
+
+
 //         DLLL curr = head;
 //         while(curr != null){
 //             System.out.println(curr.data);
@@ -119,29 +124,29 @@ public class DLL {
 //            }
 
         /// ////////////////////////insert before///////////////////////////
-        int data = 16;
-
-        DLLL curr = head;
-
-        while(curr!=null){
-            if(curr.data == data){
-                DLLL newnode  = new DLLL(788);
-
-                 newnode.next = curr;
-                 newnode.prev = curr.prev;
-
-                 if(curr.prev == null){
-                     head = newnode;
-                 }else{
-                     curr.prev.next = newnode;
-                 }
-
-                 curr.prev = newnode;
-            }
-
-            curr = curr.next;
-        }
-
+//        int data = 16;
+//
+//        DLLL curr = head;
+//
+//        while(curr!=null){
+//            if(curr.data == data){
+//                DLLL newnode  = new DLLL(788);
+//
+//                 newnode.next = curr;
+//                 newnode.prev = curr.prev;
+//
+//                 if(curr.prev == null){
+//                     head = newnode;
+//                 }else{
+//                     curr.prev.next = newnode;
+//                 }
+//
+//                 curr.prev = newnode;
+//            }
+//
+//            curr = curr.next;
+//        }
+//
 
 
         ////////////////////////////////////////////////////DELETE////////////////////////////////////////////////
@@ -175,14 +180,14 @@ public class DLL {
         
         /// ////////////////////////DELETE??????????????????????????
         
-        if(head == tail){
-            head = tail = null;
-        }
-        
-        
-        int datta = 788;
-        
-       DLLL cur = head;
+//        if(head == tail){
+//            head = tail = null;
+//        }
+//
+//
+//        int datta = 788;
+//
+//       DLLL cur = head;
        
         
        

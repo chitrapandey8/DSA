@@ -1,5 +1,7 @@
 package LinkedList;
 
+import java.util.HashSet;
+
 class Node{
     int data;
     Node next;
@@ -16,8 +18,8 @@ public class LL {
 
          Node newnode1 = new Node(5);
          Node newnode2 = new Node(10);
-         Node newnode3 = new Node(15);
-         Node newnode4 = new Node(20);
+         Node newnode3 = new Node(9);
+         Node newnode4 = new Node(10);
          Node newnode5 = new Node(25);
 
          Node head = newnode1;  //the head is always is on the first node
@@ -170,6 +172,34 @@ public class LL {
 //            fast =  fast.next.next;
 //        }
 //        System.out.println(slow.data);
+
+        /// /////////////////////////////////////////////////////REMOVE DUPLICATES????????????????????????????????????????????????????????????????????????????
+        //1.sorted
+//         Node curr = head;
+//         while(curr != null && curr.next != null){
+//             if(curr.data == curr.next.data){
+//                 curr.next = curr.next.next;
+//             }else{
+//
+//             curr = curr.next;
+//             }
+
+//         }
+        //2.unsorteddd
+//        HashSet<Integer> Hs = new HashSet<>();
+//        Node curr = head;
+//        Node prev = null;
+//
+//        while(curr != null){
+//            if(Hs.contains(curr.data)){
+//                prev.next = curr.next;
+//            }else{
+//                Hs.add(curr.data);
+//                prev =  curr;
+//            }
+//            curr = curr.next;
+//        }
+
 
 
         Node curr1 =  head;
